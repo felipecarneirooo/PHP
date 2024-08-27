@@ -2,74 +2,65 @@
 <html lang="pt">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
 <body>
 
+    <!-- Isso e um comentario-->
+
 <?php
-/* comentario*/
-$var ="php";
-$x = 5 /*inteiro +15*/ + 5;
-echo $x;
-echo "<br>";
-echo "Meu primeiro script $var !";
-echo "<br>";
-echo "Eu adoro " . $var ."!";
-echo "<br>";
-var_dump(5.333);
-var_dump("Maria");
-
-crie um arquivo em php e verifique se as variaveis abaixo sao "string"
-variaveis: 25.232 5489 meu teste 12.5e896
-
-$y = 10;
-function myTeste() {
-    echo "<p>Variavel entrada </p>";
-   
-}
-myTeste();
-echo "<p>Variavel saida e $y</p>";
- 
-    $x = 5;
-    $x = 20;
-
-    function calc() {
-        global $x, $y, $f;
-        $f = $x + $y;
-    }
-    calc();
-    echo $f;
     
-    function incri(){
-        static $h = 0;
-        echo $h;
-        $h++;
-        
+    /*comentario */
+
+    echo "Meu primeiro script em PHP!";
+    echo "<br>"; echo "<br>";
+    var_dump(3.14);
+    echo "<br>"; echo "<br>";
+    var_dump("Maria");
+    echo "<br>"; echo "<br>";
+
+?>
+
+<?php
+
+define("INFERIOR",1);
+define("SUPERIOR",100);
+
+$numero = rand(INFERIOR, SUPERIOR);
+echo "Meu numero da sorte e: "; 
+echo $numero."<br>"; echo "<br>";
+
+?>
+
+<?php
+    
+    $valor = 18;
+
+    if($valor ==18){
+        echo "o valor e 18";
     }
-    incri();
-    echo "<br>";
-    incri();
-    echo "<br>";
-    incri();
-    echo "<br>";
-    incri();
-    echo "<br>";
-    incri();
+    elseif ($valor >= 10){
+        echo "O valor e maior ou igual a 10";
+    }
+    else {
+        echo "O valor e menor que 10";
+    }
+    
     echo "<br>";
 
 ?>
 
 <?php
-define("inferior",1);
-define("superior",100);
 
-$numero = rand(inferior, superior);
-echo "Meu numero da sorte: <br>";
-echo $numero."<br>";
+echo "<br>";
+echo "O valor minimo e: ";
+echo(min(0,130,20,-3,-200)."<br>"); echo "<br>";
+echo "O valor maximo e: ";
+echo(max(0,130,20,-3,-200)."<br>");
 
 ?>
+
     
 </body>
 </html>
